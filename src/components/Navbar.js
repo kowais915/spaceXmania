@@ -1,28 +1,28 @@
-
+import { NavLink } from "react-router-dom";
+import Button from '@mui/material/Button'
+import { ButtonBase } from "@mui/material";
+import styles from '../styles/Navbar.module.css'
 
 const Navbar = () => {
-    return ( 
+    return (  
 
+        <nav className={styles.container}>
 
-        <nav>
-            <div className="brand">
-                <h2>SpaceX Mania</h2>
-            </div>
-            
-            <div className="tabs">
-                <div className="Vehicles">
-                    <button>Launch Vehicles</button>
-                </div>
+           <div className={styles.brand}>
+                <h1>SpaceX Mania</h1>
+           </div>
 
-                <div className="Vehicles">
-                    <button>Launchpads</button>
-                </div>
-            </div>
+           <div className="links">
+                
+                <Button className={styles.button} variant="contained">Vehicles</Button>
+                <Button  className={styles.button} variant="contained">Launchpads</Button>
+               
+
+           </div>
+
 
         </nav>
-        
-    
-   );
+    );
 }
  
 export default Navbar;
