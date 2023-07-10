@@ -1,11 +1,16 @@
+import CardComp from "./CardComp";
+
 const Vehicles = () => {
     return (
 
-        <>
+        <div>
 
-            <h3>vehicles page</h3>
+           <CardComp
+            title= "Vehicles"
+            
+           />
         
-        </>
+        </div>
       );
 }
  

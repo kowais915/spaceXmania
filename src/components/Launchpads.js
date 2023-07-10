@@ -1,10 +1,14 @@
+import CardComp from './CardComp';
+
 const Launchpads = () => {
     return ( 
     <>
     
-        <h3>This is the launchpads page.</h3>
+       <CardComp
+        title="Launchpads"
+       />
     
-    </> );
+    </>);
 }
  
 export default Launchpads;
