@@ -3,7 +3,9 @@ import Button from '@mui/material/Button'
 import { ButtonBase } from "@mui/material";
 import styles from '../styles/Navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({page, setPage}) => {
+
+    
     return (  
 
         <nav className={styles.container}>
@@ -14,8 +16,21 @@ const Navbar = () => {
 
            <div className="links">
                 
-                <Button className={styles.button} variant="contained">Vehicles</Button>
-                <Button  className={styles.button} variant="contained">Launchpads</Button>
+                <Button 
+                    className={styles.button} 
+                    variant="contained"
+                    onClick={()=> setPage('vehicles')}
+                >
+                    Vehicles
+                </Button>
+                
+                <Button  
+                    className={styles.button} 
+                    variant="contained"
+                    onClick={()=> setPage('launchpads')}
+                    >
+                        Launchpads
+                </Button>
                
 
            </div>

@@ -3,7 +3,7 @@ const Vehicles = () => {
 
         <>
 
-            <h1>This is the vehicles page</h1>
+            <h3>vehicles page</h3>
         
         </>
       );
