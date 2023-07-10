@@ -11,9 +11,16 @@
     color: white;
     padding: 30px;
     align-items: center;
+    height: 40px;
 }
 
 .button{
-    margin: 7px;
+    margin: 20px;
+    
 }
 
+
+.links{
+    margin: 2px;
+    
+}

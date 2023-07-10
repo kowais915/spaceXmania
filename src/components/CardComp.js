@@ -6,12 +6,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
-const CardComp = ({title}) => {
+import styles from '../styles/Card.module.css';
+
+const CardComp = ({title, picture, description}) => {
     console.log(title)
   
     return ( 
 
-        <Card>
+        <Card className={styles.card}>
 
             <CardMedia
                 sx={{ height: 140 }}

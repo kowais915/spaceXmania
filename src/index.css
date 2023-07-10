@@ -8,3 +8,9 @@
     font-family: "sans-serif";
   }
   
+
+  #root > div > header > nav > div.Navbar_links__aQqlv > button{
+
+    margin: 10px;
+
+  }

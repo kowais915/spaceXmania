@@ -9,6 +9,11 @@ const Vehicles = () => {
             title= "Vehicles"
             
            />
+
+            <CardComp
+            title= "Vehicles"
+            
+        />
         
         </div>
       );

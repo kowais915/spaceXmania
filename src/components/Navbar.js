@@ -14,7 +14,7 @@ const Navbar = ({page, setPage}) => {
                 <h1>SpaceX Mania</h1>
            </div>
 
-           <div className="links">
+           <div className={styles.links}>
                 
                 <Button 
                     className={styles.button} 
@@ -23,7 +23,7 @@ const Navbar = ({page, setPage}) => {
                 >
                     Vehicles
                 </Button>
-                
+
                 <Button  
                     className={styles.button} 
                     variant="contained"
