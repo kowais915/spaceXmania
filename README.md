@@ -2,6 +2,9 @@
 
 This project uses the SpaceX API. The primary focus of this project is to learn and put React Query to use.
 
+# Deployment
+
+The application is deployed [here](https://spacex-mania.vercel.app/)
 
 # Technology
 
