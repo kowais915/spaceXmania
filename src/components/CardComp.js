@@ -8,9 +8,8 @@ import Typography from '@mui/material/Typography';
 
 import styles from '../styles/Card.module.css';
 
-const CardComp = ({title, pic, description}) => {
-    const im = `"${pic}"`
-    console.log(im)
+const CardComp = ({title, pic, desc, name}) => {
+    console.log("Desc", desc)
 
 
   
@@ -30,12 +29,11 @@ const CardComp = ({title, pic, description}) => {
             {/* card content */}
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    {title}
+                    {name}
                 </Typography>
 
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                   {desc}
                 </Typography>
 
                 <CardActions>

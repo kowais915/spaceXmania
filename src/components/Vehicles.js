@@ -63,12 +63,13 @@ const Vehicles = () => {
         /> */}
 
         {vehiclesQuery.data.map((item)=>{
-            console.log("image: ", item.flickr_images[0])
+           
             return(
                 <CardComp
                     key={item.id}
-                    
-                    pic={item.flickr_images[0]}
+                    desc={item.description}
+                    pic={item.flickr_images}
+                    name={item.name}
                 />
             )
         })}
