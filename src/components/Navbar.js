@@ -3,6 +3,7 @@ import Button from '@mui/material/Button'
 import { ButtonBase } from "@mui/material";
 import styles from '../styles/Navbar.module.css'
 
+
 const Navbar = ({page, setPage}) => {
 
     

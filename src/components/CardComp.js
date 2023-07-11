@@ -8,8 +8,11 @@ import Typography from '@mui/material/Typography';
 
 import styles from '../styles/Card.module.css';
 
-const CardComp = ({title, picture, description}) => {
-    console.log(title)
+const CardComp = ({title, pic, description}) => {
+    const im = `"${pic}"`
+    console.log(im)
+
+
   
     return ( 
 
@@ -17,10 +20,10 @@ const CardComp = ({title, picture, description}) => {
 
             <CardMedia
                 sx={{ height: 140 }}
-                image ="/space.jpeg"
+                image = {`${pic}`}
                 title="vehicle"
 
-            
+                 
             />
 
 
