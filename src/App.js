@@ -7,8 +7,7 @@ import Vehicles from './components/Vehicles';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {useState} from 'react';
 import {useQuery, QueryClient, QueryClientProvider} from '@tanstack/react-query';
-
-
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 function App() {
   const [page, setPage] = useState('vehicles');
@@ -51,11 +50,12 @@ function App() {
 
       
 
-
+ 
 
       
 
     </div>
+     <ReactQueryDevtools/>
     </QueryClientProvider>
   );
 }
