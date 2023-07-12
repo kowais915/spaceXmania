@@ -14,7 +14,7 @@ const Vehicles = () => {
 
     const vehiclesQuery = useQuery({
 
-        queryKey: ['info'],
+        queryKey: ['vehicles'],
         queryFn: async function(){
             const response = await fetch("https://api.spacexdata.com/v4/rockets");
             return response.json();

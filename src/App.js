@@ -11,7 +11,13 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 function App() {
   const [page, setPage] = useState('vehicles');
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient({
+    defaultOptions:{
+      queries:{
+        staleTime: 60000
+      }
+    }
+  });
 
   // const fetchData =  async ()=>{
   //   const response = await fetch();

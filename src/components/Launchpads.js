@@ -15,12 +15,33 @@ const Launchpads = () => {
             return data;
 
             
-        }
+        },
+        
         
     })
 
-    console.log(data)
 
+    // laoding state
+    if(launchQuery.isLoading){
+        return(
+            <h1>Loading...</h1>
+        )
+    }
+
+
+    if(launchQuery.isFetching){
+        return(
+            <h1>Fetching...</h1>
+        )
+    }
+
+
+    
+    if(launchQuery.isError){
+        return(
+            <h1>Error...</h1>
+        )
+    }
     return ( 
     <div>
     
