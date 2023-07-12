@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import styles from '../styles/Card.module.css';
 
 const CardComp = ({title, pic, desc, name}) => {
-    console.log("Desc", desc)
+   
 
 
   
